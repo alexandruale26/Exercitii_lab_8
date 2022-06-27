@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercitii_lab_8
+namespace Exercitii_laborator_8
 {
     /// <summary>
     /// Modeleaza un telefon

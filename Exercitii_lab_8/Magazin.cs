@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Exercitii_lab_8
+namespace Exercitii_laborator_8
 {
     /// <summary>
     /// Modeleaza un magazin
