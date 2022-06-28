@@ -45,9 +45,16 @@ namespace Exercitii_laborator_8
         /// <summary>
         /// Schimba parola
         /// </summary>
-        /// <param name="nouaParola">Accepta un parametru de tip string</param>
-        public void SchimbaParola(string nouaParola)
+        /// <param name="vecheaParola">Accepta un parametru de tip string</param>
+        /// /// <param name="nouaParola">Accepta un parametru de tip string</param>
+        public void SchimbaParola(string vecheaParola, string nouaParola)
         {
+            if (!(string.Equals(this.parola, vecheaParola)))
+            {
+                Console.WriteLine("Parola gresita");
+                return;
+            }
+            
             foreach (Produs produs in Produse)
             {
                 if (produs is Telefon)
@@ -57,6 +64,7 @@ namespace Exercitii_laborator_8
                     telefon.SchimbareParola(parola, nouaParola);
                 }
             }
+            Console.WriteLine("Parola generala schimbata cu succes");
             this.parola = nouaParola;
         }
 
@@ -66,14 +74,14 @@ namespace Exercitii_laborator_8
         /// </summary>
         /// <param name="model">Accepta un parametru de tip string</param>
         /// <param name="producator">Accepta un parametru de tip string</param>
-        public void VindeProdus(string model, string producator)
+        public Produs VindeProdus(string model, string producator)
         {
             Produs dinStoc;
 
             if (Produse.Count == 0)
             {
                 Console.WriteLine("Magazinul este gol");
-                return;
+                return null;
             }
 
             foreach (Produs produs in Produse)
@@ -92,10 +100,11 @@ namespace Exercitii_laborator_8
                     Produse.Remove(dinStoc);
 
                     Console.WriteLine($"\"S-a vandut produsul {model}  {producator}\"");
-                    return;
+                    return dinStoc;
                 }
             }
             Console.WriteLine($"\"Produsul {model}  {producator} nu este pe stoc\"");
+            return null;
         }
 
 

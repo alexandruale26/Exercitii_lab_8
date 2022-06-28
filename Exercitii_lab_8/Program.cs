@@ -65,7 +65,7 @@ namespace Exercitii_laborator_8
 
 
             Console.WriteLine();
-            notAltex.SchimbaParola("mimi");
+            notAltex.SchimbaParola("bubu", "mimi");
 
 
             Console.WriteLine("\nClientul a intrat -----");
