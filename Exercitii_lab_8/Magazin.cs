@@ -86,7 +86,7 @@ namespace Exercitii_laborator_8
 
             foreach (Produs produs in Produse)
             {
-                if (string.Equals(producator, produs.producator) && string.Equals(model, produs.model))
+                if (string.Equals(producator, produs.Producator) && string.Equals(model, produs.Model))
                 {
                     dinStoc = produs;
                     casaDeMarcat.Incaseaza(dinStoc.Pret);

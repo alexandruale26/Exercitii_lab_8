@@ -72,7 +72,6 @@ namespace Exercitii_laborator_8
             notAltex.ClientInMagazin(esteClient);
 
 
-
             Console.WriteLine();
             notAltex.VindeProdus("P10", "Philips");
             notAltex.VindeProdus("L50", "Lohuis");
@@ -96,7 +95,7 @@ namespace Exercitii_laborator_8
         {
             foreach (Produs produs in magazin.Produse)
             {
-                Console.WriteLine($"{produs.model}  {produs.producator}");
+                Console.WriteLine($"{produs.Model}  {produs.Producator}");
             }
         }
 

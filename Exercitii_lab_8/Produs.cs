@@ -8,8 +8,8 @@ namespace Exercitii_laborator_8
     class Produs
     {
         public int Pret { get; private set; }
-        public string model = string.Empty;
-        public string producator = string.Empty;
+        public string Model { get; private set; }
+        public string Producator { get; private set; }
 
 
         /// <summary>
@@ -21,8 +21,8 @@ namespace Exercitii_laborator_8
         public Produs(int Pret, string model, string producator)
         {
             this.Pret = Pret;
-            this.model = model;
-            this.producator = producator;
+            this.Model = model;
+            this.Producator = producator;
         }
     }
 }
